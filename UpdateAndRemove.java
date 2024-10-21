@@ -26,7 +26,7 @@ mapShare({"a": "aaa", "c": "meh", "d": "hi"}) → {"a": "aaa", "b": "aaa", "d": 
         lettersMap.put("c" , "ccc");
         System.out.println("The original map is:  " +lettersMap);
 
-        if (lettersMap.containsKey("c") && lettersMap.containsKey("b")){
+        if (lettersMap.containsKey("c") || lettersMap.containsKey("b")){
             lettersMap.remove("c");
             lettersMap.put("b",lettersMap.get("a"));
         }
