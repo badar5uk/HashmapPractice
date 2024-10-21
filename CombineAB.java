@@ -9,18 +9,25 @@ public class CombineAB {
     Process: - An if statement to check if the key a and b exist
              - if they both exist, it would use the put method to add a new key with both values
      */
+    static Map<String, String> indexOfValues = new HashMap<>();
 
-    public static void main(String[]args){
-        Map<String,String> indexOfValues = new HashMap<>();
+    public static void main(String[] args) {
 
-        indexOfValues.put("a","Hi");
-        indexOfValues.put("b","There");
 
-        System.out.println("Before modification: "+indexOfValues);
+        indexOfValues.put("a", "Hi");
+        indexOfValues.put("b", "There");
 
-        if (indexOfValues.containsKey("a") && indexOfValues.containsKey("b")){
-            indexOfValues.put("ab",indexOfValues.get("a")+indexOfValues.get("b"));
+        System.out.println("Before modification: " + indexOfValues);
+        combine();
+    }
+
+
+
+    public static void combine() {
+        if (indexOfValues.containsKey("a") && indexOfValues.containsKey("b")) {
+            indexOfValues.put("ab", indexOfValues.get("a") + indexOfValues.get("b"));
         }
-        System.out.println("After appending:" +indexOfValues);
+        System.out.println("After appending:" + indexOfValues);
+
     }
 }
