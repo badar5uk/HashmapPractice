@@ -2,7 +2,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class OneValueFollow {
+public class OneGetsValueOtherFollows {
 
     /*
 Modify and return the given map as follows: if exactly one of the keys "a" or "b"
