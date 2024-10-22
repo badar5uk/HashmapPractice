@@ -18,7 +18,7 @@ mapAB3({"a": "aaa", "b": "bbb", "c": "cake"}) → {"a": "aaa", "b": "bbb", "c": 
     public static void main(String[]args){
         scannerInp();
         System.out.println("The Hashmap before adjusting: " + letterMap);
-        adjust();
+        mapAdjuster();
         System.out.println("The Hashmap after adjusting: " + letterMap);
     }
 
@@ -40,7 +40,7 @@ mapAB3({"a": "aaa", "b": "bbb", "c": "cake"}) → {"a": "aaa", "b": "bbb", "c": 
             }
         }
     }
-    public static void adjust(){
+    public static void mapAdjuster(){
         if(letterMap.containsKey("a") && letterMap.containsKey("b")){
             return;
         }
