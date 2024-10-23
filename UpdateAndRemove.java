@@ -7,7 +7,6 @@ public class UpdateAndRemove {
     Input: A hashmap with keys a,b,c
     Output: appending the map to have different keys
     Process: - if the key "a" has a value, set the key "b" to have that same value.
-             -
 
 Modify and return the given map as follows:  In all cases remove the key "c",
 leaving the rest of the map unchanged.
@@ -26,7 +25,7 @@ mapShare({"a": "aaa", "c": "meh", "d": "hi"}) → {"a": "aaa", "b": "aaa", "d": 
         lettersMap.put("c" , "ccc");
         System.out.println("The original map is:  " +lettersMap);
 
-        if (lettersMap.containsKey("c") || lettersMap.containsKey("b")){
+        if (lettersMap.containsKey("a")){
             lettersMap.remove("c");
             lettersMap.put("b",lettersMap.get("a"));
         }
