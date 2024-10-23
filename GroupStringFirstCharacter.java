@@ -16,9 +16,9 @@ public class GroupStringFirstCharacter {
 
     public static void main(String[]args){
         List<String> strings = new ArrayList<>(Arrays.asList("salt", "tea", "soda", "toast"));
-        for(Integer i= 0; i < strings.size(); i++){
+        for(int i= 0; i < strings.size(); i++){
             String wordBeingChecked = strings.get(i);
-            for (Integer j =i+1; j < strings.size(); j++){
+            for (int j =i+1; j < strings.size(); j++){
                 if(wordBeingChecked.charAt(0) == strings.get(j).charAt(0)){
                     String firstChar = String.valueOf(wordBeingChecked.charAt(0));
                     stringMap.put(firstChar,strings.get(i)+strings.get(j));
