@@ -1,8 +1,8 @@
-import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
+import java.util.TreeMap;
 
-public class CountCharacterFrequency {
+public class CountCharacterFrequency{
 
     /*
     Input: A string taken in by a scanner input
@@ -15,8 +15,8 @@ public class CountCharacterFrequency {
              - if consonant add to consonant map
              - display the output as 2 hashmaps with the counter as their value.
      */
-    static Map<Character, Integer> vowelMap = new HashMap<>();
-    static Map<Character, Integer> consonantMap = new HashMap<>();
+    static Map<Character, Integer> vowelMap = new TreeMap<>();
+    static Map<Character, Integer> consonantMap = new TreeMap<>();
 
     public static void main(String[] args) {
         scannerInp();
